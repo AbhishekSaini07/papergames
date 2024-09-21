@@ -1,0 +1,38 @@
+/* Mobile Layout: 480px and below. NOTE: No Media Query line here*/
+
+.container {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container img{
+    height: 70px;
+    filter: drop-shadow(0 0 5px black);
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout.*/
+/* NOTE: Now from here media query lines are added for Tablets and Desktop */
+
+@media only screen and (min-width: 481px) {
+
+.container img{
+    height: 85px;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.container img{
+    height: 100px;
+}
+
+}

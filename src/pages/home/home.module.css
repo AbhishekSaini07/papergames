@@ -1,0 +1,113 @@
+
+/* Mobile Layout: 480px and below. NOTE: No Media Query line here*/
+.HomeContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.blur{
+    filter: blur(1);
+}
+.StartGameCard{
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../assets/backgrounds/st_game_bg.png');
+    width:90vw;
+    height: 23vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+  
+    display: flex;
+    justify-content:end;
+    align-items: center;
+
+  
+}
+.StartGameCard .buttons{
+    display: flex;
+    margin-top: -10px;
+    margin-right: 12vw;
+    flex-direction: column;
+    align-items: end;
+    justify-content:flex-start;
+
+}
+
+
+
+.StartGameCard .Start{
+    background-size: cover;
+    height: 30px;
+    width: 132px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../assets/backgrounds/btn_bg.png');
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout.*/
+/* NOTE: Now from here media query lines are added for Tablets and Desktop */
+
+@media only screen and (min-width: 380px) {
+    .StartGameCard {
+        width: 85vw;
+        height: 32vh;
+    }
+
+    
+}
+
+@media only screen and (min-width: 481px) {
+    .StartGameCard{
+        width: 80vw;
+        height: 45vh;
+    }
+  
+.StartGameCard .Start{
+    background-size: cover;
+    height: 50px;
+    width: 148px;
+}
+    
+
+ 
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    .StartGameCard{
+        width: 75%;
+        height: 58vh;
+        
+        
+      
+    }
+   
+    
+.StartGameCard .Start{
+    background-size: cover;
+    height: 80px;
+    width: 260px;
+}
+    
+    
+}
+@media only screen and (min-width: 1025px) {
+    .StartGameCard {
+        width: 60vw;
+        height: 72vh;
+    }
+   
+}
